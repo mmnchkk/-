@@ -1,0 +1,1719 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family: Chilanka;
+    src: url(fonts/Chilanka-Regular.ttf);
+}
+
+/* #FC4C01 - оранжевый
+#E7E9EF - светло-серый
+#303030 - темно-серый
+line-height: 90px; междустрочный интервал */ 
+
+body {
+    font-family: "Montserrat", serif;
+    color: #303030;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.main {
+    padding: 120px 77px;
+}
+.main-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 77px;
+    max-width: 1286px;
+    width: 100%;
+}
+#link {
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    color: #303030;
+}
+#link:hover{
+    color: #FC4C01;
+    transition: all 0.5s;
+}
+#orange{
+    color: #FC4C01;
+}
+#mem{
+    cursor: pointer;
+}
+#mem:hover{
+    color: #000000;
+    transition: all 0.3s;
+}
+#mem:active{ 
+    font-family: Chilanka;
+    font-size: 60px;
+    color: black;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.orange-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat", serif;
+    background-color: #FC4C01;
+    color: white;
+    border: none;
+    padding: 15px 42px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.orange-btn:hover {
+    background-color: #ff8049;
+    outline: #FC4C01;
+    transition: all 0.5s;
+}
+.white-btn {
+    font-family: "Montserrat", serif;
+    background-color: white;
+    color: #FC4C01;
+    border: 2px solid #FC4C01;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    max-width: 244px;
+    width: 100%;
+}
+.white-btn:hover {
+    background-color: #FC4C01;
+    color: white;
+    border: 2px solid #FC4C01;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.logo {
+    width: 170px;
+    height: 44px;
+}
+.bold {
+    font-weight: bold;
+}
+
+/*header*/
+
+.head {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: #ffff;
+    padding: 15px 0;
+    box-shadow: 0 0 100px 5px #00000028;
+}
+.head-wrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1286px;
+    width: 100%;
+    gap: 85px;
+    margin: 0;
+}
+.logo-info {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    max-width: 430px;
+    width: 100%;
+    
+}
+.p-logo {
+    max-width: 237px;
+    width: 100%;
+}
+.item {
+    list-style-type: none;
+}
+.items {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    font-size: 15px;
+    padding: 0;
+    width: 414px;
+}
+.postupit{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.postupit a{
+    text-decoration: none;
+}
+
+.phone-btn {
+    display: none;
+}
+
+/*home*/
+
+.home-h1 {
+    font-size: 96px;
+    max-width: 1190px;
+    width: 90%;
+    line-height: 95px;
+}
+.home-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 122px;
+}
+.home-left {
+    display: flex;
+    flex-direction: column;
+    gap: 148px;
+}
+.home-p{
+    font-size: 45px;
+    max-width: 666px;
+    line-height: 48px;
+    font-weight: medium;
+    margin: 0;
+}
+.img-bottom{
+    position: absolute;
+    margin: 184px 282px;
+    z-index: -1000;
+}
+
+
+/*about-us*/
+
+
+.about-h2{
+    font-size: 64px;
+}
+.about-kondac{
+    background-image: url(img/FON.svg);
+    width: 1286px;
+    height: 636px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.about-kondac-wrap{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0;
+}
+.kondac {
+    object-fit: cover;
+    object-position: bottom;
+    width: 489px;
+    height: 560px;
+}
+.obla{
+    position: relative;
+}
+.kondac-p{
+    position: absolute;
+    margin: 39px 99px;
+    font-size: 40px;
+}
+.kondac-right {
+    display: flex;
+    flex-direction: column;
+    gap: 113px;
+    max-width: 718px;
+    width: 100%;
+    height: 515px;
+}
+.kondac-name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 718px;
+    width: 100%;
+    margin: 0;
+}
+.name-p{
+    text-align: right;
+    font-size: 24px;
+    margin: 0;
+}
+.name-h3{
+    text-align: right;
+    font-size: 50px;
+    margin: 0;
+}
+.about-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid #c1c1c1;
+    gap: 59px;
+    padding: 59px 0;
+}
+.about-info-left, .about-info-right{
+    display: flex;
+    flex-direction: column;
+    gap: 59px;
+}
+.about-block{
+    display: flex;
+    align-items: start;
+    gap: 10px;
+}
+.galochka{
+    object-fit: cover;
+    object-position: center;
+    width: 36px;
+}
+.about-text{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 534px;
+    width: 100%;
+}
+.about-h4{
+    font-size: 28px;
+    margin: 0;
+}
+.about-p{
+    font-size: 15px;
+    margin: 0;
+}
+
+/*pedagogi*/
+
+.teachers{
+    padding: 70px 0px;
+    border-bottom: 2px solid #c1c1c1;
+}
+.teachers-h2{
+    font-size: 64px;
+}
+.card-left{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    gap: 50px;
+}
+.card-right{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    text-align: right;
+    gap: 50px;
+}
+.img-card{
+    width: 400px;
+}
+.card-p{
+    font-size: 20px;
+    width: 900px;
+    margin-top: -30px;
+
+}
+.card-h4{
+    font-size: 45px;
+}
+.card-prep{
+    font-family: Chilanka;
+    font-size: 50px;
+    color: #FC4C01;
+}
+
+/*КАНДИЦИИ*/
+.conditions {
+    max-width: 1283px;
+    width: 100%;
+    font-size: 20px;
+}
+
+.conditions-h2{
+    font-size: 64px;
+}
+.conditions-info {
+    display: flex;
+    gap: 28px;
+}
+.conditions-left, .conditions-right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.conditions-img{
+    display: flex;
+    gap: 28px;
+}
+
+/*footer*/
+
+.footer{
+    padding: 20px 77px;
+}
+.footer-h2{
+    font-size: 64px;
+    margin: 0;
+}
+.footer-down{
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1300px;
+    width: 100%;
+    gap: 510px;
+}
+.footer-pp{
+    margin-bottom: 30px;
+}
+.btns {
+    display: flex;
+    gap: 24px;
+}
+.btn-site {
+    padding: 15px 70px
+}
+.p-logo-down {
+    width: 247px;
+}
+
+@media (min-width: 961px) and (max-width: 1280px) {
+    .main {
+        padding: 0;
+    }
+    .main-wrap {
+        gap: 0;
+        width: 100%;
+    }
+    .orange-btn {
+        padding: 15px 30px;
+        font-size: 16px;
+        border-radius: 30px;
+    }
+    .white-btn {
+        border: 2px solid #FC4C01;
+        padding: 15px 0;
+        font-size: 16px;
+        max-width: 244px;
+        width: 100%;
+    }
+    
+    /*header*/
+    
+    .head {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        padding: 5px 0;
+        width: 100%;
+    }
+    .head-wrap {
+        align-items: center;
+        width: 100%;
+        gap: 0;
+    }
+    .logo-up {
+        margin-top: 10px;
+    }
+    .logo-info {
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        width: 100%; 
+    }
+    .postupit {
+        gap: 0;
+    }
+    .items {
+        display: none;
+        width: 0;
+    }
+    .postupit {
+        gap: 10px;
+    }
+
+    
+    /*home*/
+    .home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+        gap: 30px;
+    }
+    .home-h1 {
+        font-size: 50px;
+        line-height: 55px;
+        margin: 0;
+        width: 900px;
+        text-align: left;
+    }
+    .home-info {
+        gap: 50px;
+    }
+    .home-left {
+        display: flex;
+        flex-direction: column;
+        gap: 140px;
+    }
+    .home-p{
+        font-size: 30px;
+        width: 400px;
+        line-height: 30px;
+    }
+    .img-top {
+        width: 450px;
+    }
+    .img-bottom{
+        display: none;
+    }
+    
+    
+    /*about-us*/
+    .about-us {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 300px;
+        margin-top: 50px;
+    }
+    .about-h2{
+        font-size: 45px;
+        margin: 0;
+    }
+    .about-kondac{
+        width: 900px;
+        height: 445px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 47px;
+    }
+    .about-kondac-wrap{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 30px;
+    }
+    .kondac {
+        object-position: top;
+        padding-top: 50px;
+        margin-left: 30px;
+        width: 459px;
+        height: 400px; 
+    }
+    .obla{
+        margin-top: 100px;
+        margin-right: 50px;
+    }
+    .oblako{
+        width: 450px;
+    }
+    .kondac-p{
+        margin: 20px 60px;
+        font-size: 25px;
+        width: 400px;
+    }
+    .kondac-right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        max-width: 718px;
+        width: 60%;
+        height: 100%;
+        gap: 50px;
+    }
+    .kondac-name {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        max-width: 718px;
+        width: 100%;
+        margin: 0 50px 50px 0;
+    }
+    .name-p{
+        text-align: right;
+        font-size: 20px;
+        width: 300px;
+        margin: 0;
+    }
+    .name-h3{
+        text-align: right;
+        font-size: 35px;
+    }
+    .about-info{
+        gap: 20px;
+        padding: 20px 0;
+        border: none;
+    }
+    .about-info-left, .about-info-right{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .about-block{
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        gap: 10px;
+        width: 420px;
+        height: 168px;
+    }
+    .galochka{
+        object-fit: cover;
+        object-position: center;
+        width: 36px;
+    }
+    .about-text{
+        gap: 5px;
+        width: 100%;
+    }
+
+    /*pedagogi*/
+    
+    .teachers{
+        padding: 20px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        gap: 30px;
+        border: none;
+    }
+    .teachers-h2{
+        font-size: 45px;
+        margin: 0; 
+        text-align: center;
+    }
+    .card-left{
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+        text-align: left;
+        margin: 0;
+    }
+    .card-right{
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+        text-align: right;
+    }
+    .img-card{
+        width: 330px;
+    }
+    .text-card {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .card-p{
+        font-size: 16px;
+        width: 500px;
+        margin: 0;
+        line-height: 20px;
+    }
+    .card-h4{
+        font-size: 30px;
+        width: 500px;
+        margin: 0;
+        line-height: 35px;
+    }
+    .card-prep{
+        font-size: 30px;
+        margin: 0;
+    }
+
+    /*КАНДИЦИИ*/
+    .conditions {
+        width: 70%;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .conditions-h2{
+        font-size: 45px;
+        width: 450px;
+        text-align: center;
+    }
+    .conditions-info {
+        display: flex;
+        gap: 10px;
+    }
+    .conditions-left, .conditions-right {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+    }
+    .conditions-left p, .conditions-right p {
+        margin: 0;
+        width: 440px;
+        height: 50px;
+        text-align: center;
+    }
+    .conditions-left img, .conditions-right img{
+        width: 330px;
+    }
+    .conditions-img{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    /*footer*/
+    
+    .footer{
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-h2{
+        font-size: 45px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+    .footer-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .footer-info p {
+        margin: 0;
+        font-size: 20px;
+    }
+    .footer-down{
+        padding-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        gap: 400px;
+    }
+    .footer-pp{
+        margin-bottom: 30px;
+    }
+    .btn-site {
+        margin-top: 20px;
+        padding: 15px 25px
+    }
+    .p-logo-down {
+        display: none;
+    }
+}
+
+@media (min-width: 761px) and (max-width: 960px) {
+    .main {
+        padding: 0;
+    }
+    .main-wrap {
+        gap: 0;
+        width: 100%;
+    }
+    .orange-btn {
+        padding: 15px 30px;
+        font-size: 16px;
+        border-radius: 30px;
+    }
+    .white-btn {
+        border: 2px solid #FC4C01;
+        padding: 15px 0;
+        font-size: 16px;
+        max-width: 244px;
+        width: 100%;
+    }
+    
+    /*header*/
+    
+    .head {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        padding: 5px 0;
+        width: 100%;
+    }
+    .head-wrap {
+        align-items: center;
+        width: 100%;
+        gap: 0;
+    }
+    .logo-up {
+        margin-top: 10px;
+    }
+    .logo-info {
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        width: 100%; 
+    }
+    .postupit {
+        gap: 0;
+    }
+    .items {
+        display: none;
+        width: 0;
+    }
+    .postupit {
+        gap: 10px;
+    }
+
+    
+    /*home*/
+    .home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 90px;
+        gap: 30px;
+    }
+    .home-h1 {
+        font-size: 50px;
+        line-height: 55px;
+        margin: 0; 
+        width: 600px;
+        text-align: center;
+        
+    }
+    .home-info {
+        gap: 30px;
+    }
+    .home-left {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .home-p{
+        font-size: 25px;
+        width: 320px;
+        line-height: 30px;
+    }
+    .img-top {
+        width: 330px;
+    }
+    .img-bottom{
+        display: none;
+    }
+    
+    
+    /*about-us*/
+    .about-us {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 300px;
+        margin-top: 50px;
+    }
+    .about-h2{
+        font-size: 45px;
+        margin: 0;
+    }
+    .about-kondac{
+        background-image: none;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .about-kondac-wrap{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 30px;
+    }
+    .kondac {
+        background-color: #E8E8E8;
+        border-radius: 98px;
+        object-position: top;
+        padding-top: 30px;
+        width: 459px;
+        height: 400px; 
+    }
+    .obla{
+        display: none;
+    }
+    .kondac-p{
+        z-index: 1000;
+        font-size: 20px;
+        position: relative;
+    }
+    .kondac-right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+        max-width: 718px;
+        width: 100%;
+        height: 430px;
+    }
+    .kondac-name {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        max-width: 718px;
+        width: 100%;
+        margin: 0;
+    }
+    .name-p{
+        text-align: right;
+        font-size: 20px;
+        width: 300px;
+        margin: 0;
+    }
+    .name-h3{
+        text-align: right;
+        font-size: 35px;
+    }
+    .about-info{
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0;
+        border: none;
+    }
+    .about-info-left, .about-info-right{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .about-block{
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        gap: 10px;
+        width: 600px;
+    }
+    .galochka{
+        object-fit: cover;
+        object-position: center;
+        width: 36px;
+    }
+    .about-text{
+        gap: 5px;
+        width: 100%;
+    }
+
+    /*pedagogi*/
+    
+    .teachers{
+        padding: 20px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        gap: 30px;
+        border: none;
+    }
+    .teachers-h2{
+        font-size: 45px;
+        margin: 0; 
+        text-align: center;
+    }
+    .card-left{
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+        text-align: left;
+        margin: 0;
+    }
+    .card-right{
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+        text-align: right;
+    }
+    .img-card{
+        width: 330px;
+    }
+    .text-card {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .card-p{
+        font-size: 16px;
+        width: 400px;
+        margin: 0;
+        line-height: 20px;
+    }
+    .card-h4{
+        font-size: 30px;
+        width: 400px;
+        margin: 0;
+        line-height: 35px;
+    }
+    .card-prep{
+        font-size: 30px;
+        margin: 0;
+    }
+
+    /*КАНДИЦИИ*/
+    .conditions {
+        width: 70%;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .conditions-h2{
+        font-size: 45px;
+        width: 450px;
+        text-align: center;
+    }
+    .conditions-info {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .conditions-left, .conditions-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .conditions-left p, .conditions-right p {
+        margin: 0;
+        width: 440px;
+        text-align: center;
+    }
+    .conditions-left img, .conditions-right img{
+        width: 330px;
+    }
+    .conditions-img{
+        display: flex;
+        gap: 15px;
+    }
+    
+    /*footer*/
+    
+    .footer{
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-h2{
+        font-size: 45px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .footer-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .footer-info p {
+        margin: 0;
+        font-size: 20px;
+    }
+    .footer-down{
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        gap: 250px;
+    }
+    .footer-pp{
+        margin-bottom: 30px;
+    }
+    .btn-site {
+        margin-top: 20px;
+        padding: 15px 25px
+    }
+    .p-logo-down {
+        display: none;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 760px) {
+    .main {
+        padding: 0;
+    }
+    .main-wrap {
+        gap: 0;
+        width: 100%;
+    }
+    .orange-btn {
+        padding: 15px 30px;
+        font-size: 16px;
+        border-radius: 30px;
+    }
+    .white-btn {
+        border: 2px solid #FC4C01;
+        padding: 15px 0;
+        font-size: 16px;
+        max-width: 244px;
+        width: 100%;
+    }
+    
+    /*header*/
+    
+    .head {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        padding: 5px 0;
+        width: 100%;
+    }
+    .head-wrap {
+        align-items: center;
+        width: 100%;
+        gap: 0;
+    }
+    .logo-info {
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+        margin-top: 10px;
+        width: 45%; 
+    }
+    .postupit {
+        gap: 0;
+    }
+    .p-logo, .items {
+        display: none;
+        width: 0;
+    }
+
+    .postupit {
+        gap: 10px;
+    }
+
+    
+    /*home*/
+    .home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 80px;
+        gap: 30px;
+    }
+    .home-h1 {
+        font-size: 50px;
+        line-height: 55px;
+        margin: 0; 
+        width: 400px;
+        text-align: center;
+        
+    }
+    .home-info {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .home-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .home-p{
+        font-size: 25px;
+        width: 360px;
+        line-height: 30px;
+        text-align: center;
+    }
+    .img-top {
+        width: 430px;
+    }
+    .img-bottom{
+        display: none;
+    }
+    
+    
+    /*about-us*/
+    .about-us {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 300px;
+    }
+    .about-h2{
+        font-size: 45px;
+    }
+    .about-kondac{
+        background-image: none;
+        width: 250px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .about-kondac-wrap{
+        align-items: center;
+        flex-direction: column;
+        width: 350px;
+    }
+    .kondac {
+        background-color: #E8E8E8;
+        border-radius: 98px;
+        object-position: top;
+        padding-top: 30px;
+        width: 459px;
+        height: 400px; 
+    }
+    .obla, .kondac-p{
+        display: none;
+    }
+    .kondac-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 718px;
+        width: 50%;
+        height: 100%;
+    }
+    .kondac-name {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 718px;
+        width: 80%;
+        margin: 0;
+    }
+    .name-p{
+        text-align: center;
+        font-size: 25px;
+        width: 300px;
+        margin: 12px 0 4px 0;
+    }
+    .name-h3{
+        text-align: center;
+        font-size: 40px;
+    }
+    .about-info{
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0;
+        border: none;
+    }
+    .about-info-left, .about-info-right{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .about-block{
+        display: flex;
+        align-items: start;
+        gap: 10px;
+        width: 440px;
+    }
+    .galochka{
+        object-fit: cover;
+        object-position: center;
+        width: 36px;
+    }
+    .about-text{
+        gap: 5px;
+        width: 100%;
+    }
+
+    /*pedagogi*/
+    
+    .teachers{
+        padding: 20px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        gap: 30px;
+        border: none;
+    }
+    .teachers-h2{
+        font-size: 45px;
+        margin: 0; width: 450px;
+        text-align: center;
+    }
+    .card-left{
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+    }
+    .card-right{
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+        text-align: center;
+    }
+    .img-card{
+        width: 430px;
+    }
+    .text-card {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .card-p{
+        font-size: 20px;
+        width: 400px;
+        margin: 0;
+        line-height: 23px;
+    }
+    .card-h4{
+        font-size: 35px;
+        width: 400px;
+        margin: 0;
+        line-height: 38px;
+    }
+    .card-prep{
+        font-size: 30px;
+        margin: 0;
+    }
+
+    /*КАНДИЦИИ*/
+    .conditions {
+        width: 70%;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .conditions-h2{
+        font-size: 45px;
+        width: 450px;
+        text-align: center;
+    }
+    .conditions-info {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .conditions-left, .conditions-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .conditions-left p, .conditions-right p {
+        margin: 0;
+        width: 440px;
+        text-align: center;
+    }
+    .conditions-left img, .conditions-right img{
+        width: 430px;
+    }
+    .conditions-img{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    /*footer*/
+    
+    .footer{
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-h2{
+        font-size: 45px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .footer-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .footer-info p {
+        margin: 0;
+        font-size: 20px;
+    }
+    .footer-down{
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 10px;
+    }
+    .footer-pp{
+        margin-bottom: 30px;
+    }
+
+    .btn-site {
+        margin-top: 20px;
+        padding: 15px 25px
+    }
+    .p-logo-down {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .main {
+        padding: 0;
+    }
+    .main-wrap {
+    
+        gap: 0;
+        width: 100%;
+    }
+    .orange-btn {
+        padding: 15px 30px;
+        font-size: 16px;
+        border-radius: 30px;
+    }
+    .white-btn {
+        border: 2px solid #FC4C01;
+        padding: 15px 0;
+        font-size: 16px;
+        max-width: 244px;
+        width: 100%;
+    }
+    
+    /*header*/
+    
+    .head {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        padding: 5px 0;
+        width: 100%;
+    }
+    .head-wrap {
+        align-items: center;
+        width: 100%;
+        gap: 0;
+    }
+    .logo-info {
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+        margin-top: 10px;
+        width: 45%; 
+    }
+    .postupit {
+        gap: 0;
+    }
+    .p-logo, .items, .postupit p, .nophone-btn {
+        display: none;
+        width: 0;
+    }
+    .phone-btn {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+    }
+    
+    /*home*/
+    .home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 80px;
+        gap: 30px;
+    }
+    .home-h1 {
+        font-size: 45px;
+        line-height: 50px;
+        margin: 0; 
+        width: 360px;
+        text-align: center;
+        
+    }
+    .home-info {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .home-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .home-p{
+        font-size: 20px;
+        width: 360px;
+        line-height: 25px;
+        text-align: center;
+    }
+    .img-top {
+        width: 330px;
+    }
+    .img-bottom{
+        display: none;
+    }
+    
+    
+    /*about-us*/
+    .about-us {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 300px;
+    }
+    .about-h2{
+        font-size: 40px;
+    }
+    .about-kondac{
+        background-image: none;
+        width: 250px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .about-kondac-wrap{
+        align-items: center;
+        flex-direction: column;
+        width: 250px;
+    }
+    .kondac {
+        background-color: #E8E8E8;
+        border-radius: 98px;
+        object-position: top;
+        padding-top: 30px;
+        width: 359px;
+        height: 300px; 
+    }
+    .obla, .kondac-p{
+        display: none;
+    }
+    .kondac-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 718px;
+        width: 50%;
+        height: 100%;
+    }
+    .kondac-name {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 718px;
+        width: 50%;
+        margin: 0;
+    }
+    .name-p{
+        text-align: center;
+        font-size: 20px;
+        width: 300px;
+        margin: 12px 0 4px 0;
+    }
+    .name-h3{
+        text-align: center;
+        font-size: 35px;
+    }
+    .about-info{
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0;
+        border: none;
+    }
+    .about-info-left, .about-info-right{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .about-block{
+        display: flex;
+        align-items: start;
+        gap: 10px;
+    }
+    .galochka{
+        object-fit: cover;
+        object-position: center;
+        width: 36px;
+    }
+    .about-text{
+        gap: 5px;
+        width: 80%;
+    }
+
+    /*pedagogi*/
+    
+    .teachers{
+        padding: 20px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        gap: 30px;
+        border: none;
+    }
+    .teachers-h2{
+        font-size: 40px;
+        margin: 0; width: 360px;
+        text-align: center;
+    }
+    .card-left{
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+    }
+    .card-right{
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+        text-align: center;
+    }
+    .img-card{
+        width: 330px;
+    }
+    .text-card {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .card-p{
+        font-size: 16px;
+        width: 300px;
+        margin: 0;
+        line-height: 16px;
+    }
+    .card-h4{
+        font-size: 30px;
+        width: 300px;
+        margin: 0;
+        line-height: 30px;
+    }
+    .card-prep{
+        font-size: 30px;
+        margin: 0;
+    }
+
+    /*КАНДИЦИИ*/
+    .conditions {
+        width: 70%;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .conditions-h2{
+        font-size: 40px;
+        width: 200px;
+        text-align: center;
+    }
+    .conditions-info {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .conditions-left, .conditions-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 10px;
+    }
+    .conditions-left p, .conditions-right p {
+        margin: 0;
+        width: 300px;
+        text-align: center;
+    }
+    .conditions-left img, .conditions-right img{
+        width: 330px;
+    }
+    .conditions-img{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    /*footer*/
+    
+    .footer{
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-h2{
+        font-size: 40px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .footer-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .footer-info p {
+        margin: 0;
+    }
+    .footer-down{
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 10px;
+    }
+    .footer-pp{
+        margin-bottom: 30px;
+    }
+
+    .btn-site {
+        margin-top: 20px;
+        padding: 15px 25px
+    }
+    .p-logo-down {
+        display: none;
+    }
+}
