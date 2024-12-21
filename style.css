@@ -11,7 +11,9 @@
 #E7E9EF - светло-серый
 #303030 - темно-серый
 line-height: 90px; междустрочный интервал */ 
-
+.kondac-phone {
+    display: none;
+}
 body {
     font-family: "Montserrat", serif;
     color: #303030;
@@ -855,6 +857,10 @@ body {
         gap: 30px;
     }
     .kondac {
+        display: none;
+    }
+    .kondac-phone {
+        display: block;
         background-color: #E8E8E8;
         border-radius: 98px;
         object-position: top;
@@ -1183,6 +1189,10 @@ body {
         width: 350px;
     }
     .kondac {
+        display: none;
+    }
+    .kondac-phone {
+        display: block;
         background-color: #E8E8E8;
         border-radius: 98px;
         object-position: top;
@@ -1513,6 +1523,10 @@ body {
         width: 250px;
     }
     .kondac {
+        display: none;
+    }
+    .kondac-phone {
+        display: block;
         background-color: #E8E8E8;
         border-radius: 98px;
         object-position: top;
